@@ -10,7 +10,7 @@ public:
     }
     bool GamePiece::IsLegalMove(int iSrcRow, int iSrcCol, int iDestRow, int iDestCol, GamePiece* GameBoard[8][8]){//defines the piece legal moves. 
         GamePiece* qpDest = GameBoard[iDestRow][iDestCol];
-        if((qpDest == o) || (mPieceColor != qpDest->getColor())){
+        if((qpDest == o) || (mPieceColor != qpDest->getColor())){dsadas
             return AreSquaresLegal(iSrcRow, iSrcCol, iDestCol, GameBoard);
         }
         return false;

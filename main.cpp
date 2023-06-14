@@ -1,5 +1,7 @@
-#include "PawnPiece.cpp"
-#include "GamePiece.h"
-#include <stdio.h>
-#include <iostream>
-//#include <SFML>
+#include "Deck.h"
+int main()
+{
+	Deck deck;
+	system("pause");
+	return 0;
+}

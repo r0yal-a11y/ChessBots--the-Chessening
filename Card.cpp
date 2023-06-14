@@ -6,7 +6,10 @@ Card::Card(Gamepieces GAMEPIECE, Suits SUIT)
 {
 
 }
+Card::Card()
+{
 
+}
 Card::~Card()
 {
 
@@ -40,7 +43,10 @@ void Card::Print()
 	else if (Gamepiece == KING)
 		std::cout << "K";
 
-	else std::cout << "P";
+	else if (Gamepiece == PAWN)
+		std::cout << "P";
+	else
+		std::cout << "_";
 
 	if (Suit == HEARTS)
 	{
@@ -59,6 +65,6 @@ void Card::Print()
 		std::cout << "S";
 	}
 	else
-		std::cout << "!";
+		std::cout << "_";
 
 };

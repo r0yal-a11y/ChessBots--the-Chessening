@@ -1,4 +1,5 @@
 #include "GamePiece.h"
+
 class KingPiece : public GamePiece
 {
     public: KingPiece(char cColor) : GamePiece(cColor){}

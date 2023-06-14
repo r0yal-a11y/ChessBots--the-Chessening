@@ -10,7 +10,7 @@ class PawnPiece :public GamePiece
     }
     bool AreSquaresLegal(int iSrcRow, int iSrcCol, int iDestRow, int iDestCol, GamePiece* GameBoard[8][8]){
                 GamePiece* qpDest = GameBoard[iDestRow][iDestCol];
-                if(qpDest == o){
+                if(qpDest == 0){
                     //Destination square unoccupied
                     if(iSrcCol == iDestCol) {
                         if(GetColor() == 'W'){
